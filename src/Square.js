@@ -1,15 +1,15 @@
 import React from "react";
 import './index.css';
 
-function Square(props) {
+const Square = ({value, onClick}) => {
     return (
         <button
             className="square"
-            onClick={props.onClick}
+            onClick={onClick}
         >
-            {props.value}
+            {value}
         </button>
-    );
+    )
 }
 
 export default Square
